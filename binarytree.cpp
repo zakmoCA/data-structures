@@ -61,9 +61,9 @@ int main() {
   root->right->right = newNode(7);
 
   cout << "preorder traversal: ";
-  traversePreOrder(root);
+  traversePreOrder(root); // 1 2 4 5 3 6 7
   cout << "\nInorder traversal: ";
-  traverseInOrder(root);
+  traverseInOrder(root); // 4 2 5 1 6 3 7
   cout << "\nPostorder traversal: ";
-  traversePostOrder(root);
+  traversePostOrder(root); // 4 5 2 6 7 3 1
 }
