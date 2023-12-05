@@ -31,14 +31,14 @@ public:
         // if list not empty
         Node* temp = head; // start at head
         while (temp->next != nullptr) {
-            temp = temp->next; // traverse node by node
+            temp = temp->next; // node by node traversal
         }
-        temp->next = newNode; // set the next pointer of last node to point to newNode
+        temp->next = newNode; // last node pointer to point to newNode
         // newNode is now last node in list
     }
 
     void display() {
-        Node* temp = head; // temp functionally analagous to for-loop index
+        Node* temp = head; // temp = i
         while (temp != nullptr) {
             std::cout << temp->data << " -> ";
             temp = temp->next;
